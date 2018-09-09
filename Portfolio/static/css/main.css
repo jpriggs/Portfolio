@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
 body {
-  background-color: #20252A;
+  background-color: #20252A !important;
 }
 .my-navbar {
   border-radius: 0 0 15px 15px;
@@ -41,10 +41,12 @@ body {
   border-radius: 15px;
 }
 .line-bottom {
-  @extend .line-top;
-  width: 205px;
-  float: right;
-  margin-right: 3px;
+    background-color: white;
+    height: 10px;
+    width: 205px;
+    float: right;
+    margin-right: 3px;
+    border-radius: 15px;
 }
 .my-name-first {
   font-family: 'Special Elite', cursive;
@@ -54,10 +56,12 @@ body {
   margin-left: 2px;
 }
 .my-name-last {
-  @extend .my-name-first;
-  text-align: right;
-  margin-top: -65px;
-  margin-bottom: -20px;
+    font-family: 'Special Elite', cursive;
+    font-size: 72px;
+    color: white;
+    text-align: right;
+    margin-top: -65px;
+    margin-bottom: -20px;
 }
 .my-nameplate {
   background-color: transparant;
@@ -88,8 +92,11 @@ body {
   left: 5px;
 }
 .right-text {
-  @extend .left-text;
-  left: 520px;
+    font-family: 'Caveat', cursive;
+    font-size: 82px;
+    font-weight: bold;
+    top: 170px;
+    left: 520px;
 }
 .upper-left {
   background-color: white;
@@ -102,20 +109,34 @@ body {
   z-index: 0;
 }
 .lower-left {
-  @extend .upper-left;
-  width: 215px;
-  top: 187px;
-  left: 7px;
+    background-color: white;
+    height: 28px;
+    width: 215px;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 187px;
+    left: 7px;
+    z-index: 0;
 }
 .upper-right {
-  @extend .upper-left;
-  left: 465px;
+    background-color: white;
+    height: 28px;
+    width: 160px;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 87px;
+    left: 465px;
+    z-index: 0;
 }
 .lower-right {
-  @extend .upper-left;
-  width: 225px;
-  top: 187px;
-  left: 472px;
+    background-color: white;
+    height: 28px;
+    width: 225px;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 187px;
+    left: 472px;
+    z-index: 0;
 }
 .photo-container {
   background-color: white;
@@ -126,12 +147,12 @@ body {
   left: 29%;
   border-radius: 150px;
   z-index: 1;
-  img {
-    height: 265px;
-    width: 265px;
-    border-radius: 150px;
-    margin: 10px 10px;
-  }
+}
+.photo-container img {
+  height: 265px;
+  width: 265px;
+  border-radius: 150px;
+  margin: 10px 10px;
 }
 .section-header {
   font-family: 'Libre Barcode 128 Text', cursive;
@@ -165,10 +186,13 @@ body {
   padding: 0 10px 0 10px;
 }
 .projects-container {
-  @extend .aboutme-container;
   background-color: transparent;
   height: auto;
-  box-shadow: none;
+  width: 95%;
+  border-radius: 25px;
+  position: relative;
+  margin: 0 auto 200px auto;
+  overflow: auto;
   opacity: 1.0;
 }
 .project-object {
@@ -180,58 +204,74 @@ body {
   border-radius: 15px;
   cursor: pointer;
   z-index: 0;
-  img {
-    height: auto;
-    width: 100%;
-    border-radius: 15px;
-  }
-  .git-link {
-    background-color: black;
-    position: absolute;
-    top: 75%;
-    left: 2%;
-    z-index: 2;
-  }
-  .git-link:hover {
-    box-shadow: 1px 1px 10px 2px white;
-  }
+}
+.project-object img {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+.git-link {
+  background-color: black;
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  z-index: 2;
+}
+.git-link:hover {
+  box-shadow: 1px 1px 10px 2px white;
 }
 .server-notice {
-  @extend .self-description;
+  font-family: 'Poiret One', cursive;
   font-size: 22px;
+  font-weight: bold;
+  text-align: justify;
+  color: white;
+  padding: 0 10px 0 10px;
   margin: 0px 0 0 10px;
 }
 .proficiencies-container {
-  @extend .aboutme-container;
-  background-color: white;
-  img {
-    height: auto;
-    width: 100%;
-    margin: 10px 0 0 10px;
-  }
+    background-color: white;
+    height: 660px;
+    width: 95%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px 0.2px black;
+    position: relative;
+    margin: 0 auto 200px auto;
+    overflow: auto;
+    opacity: 0.7;
+}
+.proficiencies-container img {
+  height: auto;
+  width: 100%;
+  margin: 10px 0 0 10px;
 }
 .contact-container {
-  @extend .aboutme-container;
-  height: auto;
-  background-color: transparent;
-  box-shadow: none;
-  h3 {
-    color: white;
-    margin-left: 25px;
-  }
-  a {
-    margin: 25px;
-  }
-  .contact-button:hover {
-    box-shadow: 1px 1px 10px 2px white;
-  }
-  .linked-in {
-    background-color: #0077B5;
-  }
-  .facebook {
-    background-color: #3B5998;
-  }
+    background-color: transparent;
+    height: auto;
+    width: 95%;
+    border-radius: 25px;
+    position: relative;
+    margin: 0 auto 200px auto;
+    overflow: auto;
+    opacity: 0.7;
 }
+.contact-container h3 {
+  color: white;
+  margin-left: 25px;
+}
+.contact-container a {
+  margin: 25px;
+}
+.contact-container.contact-button:hover {
+  box-shadow: 1px 1px 10px 2px white;
+}
+.contact-container.linked-in {
+  background-color: #0077B5;
+}
+.contact-container.facebook {
+  background-color: #3B5998;
+}
+
 //Scroll-bar modification
 ::-webkit-scrollbar {
     width: 0px;

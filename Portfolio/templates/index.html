@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <title>Jason Riggs Portfolio</title>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light my-navbar" id="nav-bar">
+        <a class="navbar-brand my-icon" href="#">jR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="name-background">
+              <div class="line-top"></div>
+              <p class="my-name-first">jason</p>
+              <p class="my-name-last">Riggs</p>
+              <div class="line-bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="my-nameplate">
+            <h1 class="name-text first-name">JASON</h1>
+            <div class="upper-left"></div>
+            <h1 class="name-text left-text">Design</h1>
+            <div class="lower-left"></div>
+            <div class="photo-container">
+              <img src="http://i66.tinypic.com/sqgq5t.jpg" alt="Profile Picture">
+            </div>
+            <h1 class="name-text last-name">RIGGS</h1>
+            <div class="upper-right"></div>
+            <h1 class="name-text right-text">Space</h1>
+            <div class="lower-right"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="about"></div>
+          <h1 class="section-header" id="about">about me</h1>
+          <div class="aboutme-container">
+            <p class="self-description">"I'm an aspiring software engineer searching for opportunities to master full-stack development, mobile app creation, and platform based designs to deliver the highest quality user experience."</p>
+            <p class="self-description">In 2016, I began taking Harvard University's highly respected CS50 course. It taught me the fundamentals of computer science and how to do full-stack development using Python.</p>
+            <p class="self-description">Since then, I have been learning front-end development and developing my skills using JavaScript and many modern frameworks to create dynamic websites. </p>
+            <p class="self-description">My goal is to work for a company that will support my software engineering growth and challenge me to grow.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="projects"></div>
+          <h1 class="section-header">projects</h1>
+          <div class="projects-container" id="projects-container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="project-object">
+                  <div class="image-container">
+                    <img src="http://i64.tinypic.com/t7jvvq.jpg" alt="Karbonographer image">
+                    <a href="https://karbonographer.herokuapp.com/" class="project-link"></a>
+                  </div>
+                  <a href="https://github.com/jpriggs/Karbonographer" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="project-object">
+                  <div class="image-container">
+                    <img src="http://i66.tinypic.com/34gpo2c.jpg" alt="Calculon5000 image">
+                    <a href="https://calculon-5000.herokuapp.com/" class="project-link"></a>
+                  </div>
+                  <a href="https://github.com/jpriggs/calculon5000" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="project-object">
+                  <div class="image-container">
+                    <img src="http://i66.tinypic.com/spasck.jpg" alt="Twitchin the Night Away image">
+                    <a href="https://twitchin-the-night-away.herokuapp.com/" class="project-link"></a>
+                  </div>
+                  <a href="https://github.com/jpriggs/TwitchinTheNightAway" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="project-object">
+                  <div class="image-container">
+                    <img src="http://i68.tinypic.com/fwpxfr.jpg" alt="Weather Window image">
+                    <a href="https://weather-window.herokuapp.com/" class="project-link"></a>
+                  </div>
+                  <a href="https://github.com/jpriggs/WeatherWindow" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="project-object">
+                  <div class="image-container">
+                    <img src="http://i67.tinypic.com/2rzcaqv.jpg" alt="Just Wikipedia It image">
+                    <a href="https://just-wikipedia-it.herokuapp.com/" class="project-link"></a>
+                  </div>
+                  <a href="https://github.com/jpriggs/JustWikipediaIt" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="server-notice">** Please allow 5-10 seconds for Heroku to load the page</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="contact"></div>
+          <h1 class="section-header">contact</h1>
+          <div class="contact-container">
+            <div class="row">
+              <h3>jprigdon@gmail.com</h3>
+            </div>
+            <div class="row">
+              <a href="https://www.linkedin.com/in/jason-rigdon-35557119/" target="_blank" class="btn btn-primary linked-in contact-button" role="button"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+              <a href="https://www.facebook.com/jprigdon" target="_blank" class="btn btn-primary facebook contact-button" role="button"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
