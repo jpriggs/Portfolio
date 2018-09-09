@@ -9,6 +9,8 @@ name = "pypi"
 
 scss = "*"
 gunicorn = "*"
+flask = "*"
+requests = "*"
 
 
 [dev-packages]
