@@ -210,7 +210,7 @@ body {
   border-radius: 15px;
 }
 .git-link {
-  background-color: black;
+  background-color: #16191D !important;
   position: absolute;
   top: 75%;
   left: 2%;
@@ -228,21 +228,6 @@ body {
   padding: 0 10px 0 10px;
   margin: 0px 0 0 10px;
 }
-.proficiencies-container {
-    background-color: white;
-    height: 660px;
-    width: 95%;
-    border-radius: 25px;
-    box-shadow: 1px 1px 20px 0.2px black;
-    position: relative;
-    margin: 0 auto 200px auto;
-    opacity: 0.7;
-}
-.proficiencies-container img {
-  height: auto;
-  width: 100%;
-  margin: 10px 0 0 10px;
-}
 .contact-container {
     background-color: transparent;
     height: auto;
@@ -250,7 +235,7 @@ body {
     border-radius: 25px;
     position: relative;
     margin: 0 auto 200px auto;
-    opacity: 0.7;
+    opacity: 1.0;
 }
 .contact-container h3 {
   color: white;
