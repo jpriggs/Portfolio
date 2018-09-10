@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
@@ -73,8 +73,8 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="project-object">
-                  <div class="image-container">
-                    <img src="http://i64.tinypic.com/t7jvvq.jpg" alt="Karbonographer image">
+                  <div class="image-container" id="test">
+                    <img src="{{ url_for('static', filename='images/karbonographer.jpg') }}" alt="Karbonographer image">
                     <a href="https://karbonographer.herokuapp.com/" class="project-link"></a>
                   </div>
                   <a href="https://github.com/jpriggs/Karbonographer" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
@@ -83,7 +83,7 @@
               <div class="col-md-6">
                 <div class="project-object">
                   <div class="image-container">
-                    <img src="http://i66.tinypic.com/34gpo2c.jpg" alt="Calculon5000 image">
+                    <img src="{{ url_for('static', filename='images/calculon5000.jpg') }}" alt="Calculon5000 image">
                     <a href="https://calculon-5000.herokuapp.com/" class="project-link"></a>
                   </div>
                   <a href="https://github.com/jpriggs/calculon5000" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
@@ -94,7 +94,7 @@
               <div class="col-md-6">
                 <div class="project-object">
                   <div class="image-container">
-                    <img src="http://i66.tinypic.com/spasck.jpg" alt="Twitchin the Night Away image">
+                    <img src="{{ url_for('static', filename='images/twitchin-the-night-away.jpg') }}" alt="Twitchin the Night Away image">
                     <a href="https://twitchin-the-night-away.herokuapp.com/" class="project-link"></a>
                   </div>
                   <a href="https://github.com/jpriggs/TwitchinTheNightAway" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
@@ -103,7 +103,7 @@
               <div class="col-md-6">
                 <div class="project-object">
                   <div class="image-container">
-                    <img src="http://i68.tinypic.com/fwpxfr.jpg" alt="Weather Window image">
+                    <img src="{{ url_for('static', filename='images/weather-window.jpg') }}" alt="Weather Window image">
                     <a href="https://weather-window.herokuapp.com/" class="project-link"></a>
                   </div>
                   <a href="https://github.com/jpriggs/WeatherWindow" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
@@ -114,7 +114,7 @@
               <div class="col-md-6">
                 <div class="project-object">
                   <div class="image-container">
-                    <img src="http://i67.tinypic.com/2rzcaqv.jpg" alt="Just Wikipedia It image">
+                    <img src="{{ url_for('static', filename='images/just-wikipedia-it.jpg') }}" alt="Just Wikipedia It image">
                     <a href="https://just-wikipedia-it.herokuapp.com/" class="project-link"></a>
                   </div>
                   <a href="https://github.com/jpriggs/JustWikipediaIt" alt="Git Link" target="_blank" class="btn btn-dark git-link" role="button"><i class="fab fa-github"></i> Github</a>
