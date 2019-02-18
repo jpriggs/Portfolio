@@ -11,6 +11,7 @@ scss = "*"
 gunicorn = "*"
 flask = "*"
 requests = "*"
+"urllib3" = "*"
 
 
 [dev-packages]
